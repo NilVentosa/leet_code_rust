@@ -1,9 +1,6 @@
 use std::collections::HashMap;
 
-fn main() 
-{
-    println!("{:?}", two_sum(vec![1,2,3,4,5], 9));
-}
+fn main() {}
 
 fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> 
 {
