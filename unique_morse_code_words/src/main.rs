@@ -1,5 +1,13 @@
 fn main() {
-    assert_eq!(2, unique_morse_representations(vec!["gin".to_string(), "zen".to_string(),"gig".to_string(),"msg".to_string()]));
+    assert_eq!(
+        2,
+        unique_morse_representations(vec![
+            "gin".to_string(),
+            "zen".to_string(),
+            "gig".to_string(),
+            "msg".to_string()
+        ])
+    );
 }
 
 pub fn unique_morse_representations(words: Vec<String>) -> i32 {
@@ -49,5 +57,4 @@ pub fn unique_morse_representations(words: Vec<String>) -> i32 {
     }
 
     return result.len() as i32;
-
 }

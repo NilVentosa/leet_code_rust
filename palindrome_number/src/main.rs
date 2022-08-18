@@ -13,40 +13,38 @@ pub fn is_palindrome(x: i32) -> bool {
 
     while thing > 0 {
         pop = thing % 10;
-        thing = thing/10;
+        thing = thing / 10;
 
         reversed = (reversed * 10) + pop;
     }
-    return reversed == x
+    return reversed == x;
 }
 
-
 #[cfg(test)]
- mod tests {
+mod tests {
     use crate::is_palindrome;
-     #[test]
-     fn one() {
-         assert_eq!(true,is_palindrome(121))
-     }
+    #[test]
+    fn one() {
+        assert_eq!(true, is_palindrome(121))
+    }
 
-     #[test]
-     fn two() {
+    #[test]
+    fn two() {
         assert_eq!(false, is_palindrome(-121))
-     }
+    }
 
-     #[test]
-     fn three() {
-         assert_eq!(false, is_palindrome(10))
-     }
+    #[test]
+    fn three() {
+        assert_eq!(false, is_palindrome(10))
+    }
 
-     #[test]
-     fn four() {
-         assert_eq!(true, is_palindrome(0))
-     }
+    #[test]
+    fn four() {
+        assert_eq!(true, is_palindrome(0))
+    }
 
-     #[test]
-     fn five() {
-         assert_eq!(true, is_palindrome(1111))
-     }
-
- }
+    #[test]
+    fn five() {
+        assert_eq!(true, is_palindrome(1111))
+    }
+}
