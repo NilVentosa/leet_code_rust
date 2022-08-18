@@ -13,11 +13,11 @@ pub fn is_palindrome(x: i32) -> bool {
 
     while thing > 0 {
         pop = thing % 10;
-        thing = thing / 10;
+        thing /= 10;
 
         reversed = (reversed * 10) + pop;
     }
-    return reversed == x;
+    reversed == x
 }
 
 #[cfg(test)]

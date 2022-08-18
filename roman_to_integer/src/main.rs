@@ -5,7 +5,7 @@ fn main() {
 }
 
 pub fn roman_to_int(s: String) -> i32 {
-    if s == "" {
+    if s.is_empty() {
         return 0;
     }
 
@@ -33,7 +33,7 @@ pub fn roman_to_int(s: String) -> i32 {
         }
     }
 
-    return result;
+    result
 }
 
 #[cfg(test)]

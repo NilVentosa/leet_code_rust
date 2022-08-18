@@ -56,5 +56,5 @@ pub fn unique_morse_representations(words: Vec<String>) -> i32 {
         result.insert(word_in_morse, true);
     }
 
-    return result.len() as i32;
+    result.len() as i32
 }

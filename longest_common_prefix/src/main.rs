@@ -44,5 +44,5 @@ pub fn longest_common_prefix(strs: Vec<String>) -> String {
         start += 1;
     }
 
-    return result;
+    result
 }
